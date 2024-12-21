@@ -1,0 +1,23 @@
+{
+    "paramater": {
+        "llm_model": "llama3.2-vision:latest",
+        "prompt": "{context}\n\n---\n\n根據以上資料用繁體中文回答問題: {question}\n",
+        "query_num": 2
+    },
+    "database": {
+        "selected": "default",
+        "default": {
+            "create_time": "2024/12/16 11:12:53",
+            "path": "storage/default/database",
+            "embedding_model": "all-minilm:latest",
+            "remarks": "Default database."
+        }
+    },
+    "text_splitter": {
+        "chunk_size": 150,
+        "chunk_overlap": 50
+    },
+    "server": {
+        "base_url": "http://localhost:11434/"
+    }
+}

@@ -1,0 +1,13 @@
+ollama==0.3.3
+
+llama-index-llms-ollama
+llama_index
+
+langchain_text_splitters
+langchain-ollama
+langchain_chroma
+
+marker-pdf
+streamlit
+humanize
+PyPDF2
