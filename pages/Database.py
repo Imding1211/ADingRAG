@@ -327,10 +327,6 @@ if PDF_col2.button("新增", key=4):
 
     with database_status.status('資料處理中...', expanded=True) as update_status:
 
-        print(f'{working_dir}/temp_PDF')
-
-        print(f'{working_dir}/storage/{selected_database}/output_MD')
-
         DatabaseController.save_PDF(files)
 
         #subprocess.run(["marker", "--workers", "2", f"{working_dir}/temp_PDF", f"{working_dir}/storage/{selected_database}/output_MD"])
