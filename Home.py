@@ -32,21 +32,29 @@ def load_PDF(PDF_info):
 
     return PDF
 
+#-----------------------------------------------------------------------------#
+
+def text_to_stream(text):
+
+    for word in text.split(" "):
+        yield word + " "
+        time.sleep(0.02)
+
 #=============================================================================#
 
 st.set_page_config(layout="wide")
 
 if "messages" not in st.session_state or "memory" not in st.session_state:
-    st.session_state.messages = [{"role": "system", "content": "使用繁體中文回答問題", "source": [], "time": 0}]
-    st.session_state.memory   = [{"role": "system", "content": "使用繁體中文回答問題", "source": [], "time": 0}]
+    st.session_state.messages = [{"role": "system", "think_content": "", "response_content": "使用繁體中文回答問題", "source": [], "time": 0}]
+    st.session_state.memory   = [{"role": "system", "think_content": "", "response_content": "使用繁體中文回答問題", "source": [], "time": 0}]
 
     if len(DatabaseController.calculate_existing_ids()) == 0:
         info = "👈 Hi~ 資料庫是空的，請先到Database頁面點選上傳資料。"
     else:
         info = "✋ Hi~ 請問想詢問什麼問題呢？"
     
-    st.session_state.messages.append({"role": "assistant", "content": info, "source": [], "time": 0})
-    st.session_state.memory.append({"role": "assistant", "content": info, "source": [], "time": 0})
+    st.session_state.messages.append({"role": "assistant", "think_content": "", "response_content": info, "source": [], "time": 0})
+    st.session_state.memory.append({"role": "assistant", "think_content": "", "response_content": info, "source": [], "time": 0})
 
 if "preview" not in st.session_state:
     st.session_state.preview = {}
@@ -68,11 +76,21 @@ for message in st.session_state.messages[1:]:
 
     if message["role"] == "user":
         with chat_container.chat_message("user", avatar="🦖"):
-            st.markdown(message["content"])
+            st.markdown(message["response_content"])
 
     else:
         with chat_container.chat_message("assistant", avatar="🤖"):
-            st.markdown(message["content"])
+
+            if len(message["think_content"]):
+                st.html(f'''
+                    <body>
+                        <details>
+                            <summary>思考過程</summary>
+                            <p>{message['think_content']}</p>
+                        </details>
+                    </body>''')
+
+            st.markdown(message["response_content"])
 
             if message["time"] > 0:
                 st.caption(f"回應時間:{message['time']}")
@@ -103,19 +121,30 @@ if question := st.chat_input("輸入問題:"):
 
     prompt, preview_text = QueryController.generate_prompt(question, results)
 
-    st.session_state.messages.append({"role": "user", "content": question, "source": [], "time": 0})
-    st.session_state.memory.append({"role": "user", "content": prompt, "source": [], "time": 0})
+    st.session_state.messages.append({"role": "user", "think_content": "", "response_content": question, "source": [], "time": 0})
+    st.session_state.memory.append({"role": "user", "think_content": "", "response_content": prompt, "source": [], "time": 0})
     st.session_state.preview = preview_text
+
+    start_time = time.time()
+
+    response = ModelController.generate_response(st.session_state.memory)
+
+    end_time = time.time()
 
 #-----------------------------------------------------------------------------#
 
     with chat_container.chat_message("assistant", avatar="🤖"):
 
-        start_time = time.time()
+        if len(response['think_content']):
+            st.html(f'''
+                <body>
+                    <details>
+                        <summary>思考過程</summary>
+                        <p>{response['think_content']}</p>
+                    </details>
+                </body>''')
 
-        response = st.write_stream(ModelController.generate_response(st.session_state.memory))
-
-        end_time = time.time()
+        st.write_stream(text_to_stream(response['response_content']))
 
         st.caption(f"回應時間:{round(end_time - start_time, 2)}")
 
@@ -130,10 +159,10 @@ if question := st.chat_input("輸入問題:"):
                 source_name = source.split(":")[1]
                 download_buttons.append(st.download_button(key=uuid.uuid4(), label=source_name, data=load_PDF(source), file_name=source_name, mime='application/octet-stream'))
 
-    st.session_state.memory[-1]["content"] = question
+    st.session_state.memory[-1]["response_content"] = question
 
-    st.session_state.messages.append({"role": "assistant", "content": response, "source": sources, "time": round(end_time - start_time, 2)})
-    st.session_state.memory.append({"role": "assistant", "content": response, "source": sources, "time": round(end_time - start_time, 2)})
+    st.session_state.messages.append({"role": "assistant", "think_content": response['think_content'], "response_content": response['response_content'], "source": sources, "time": round(end_time - start_time, 2)})
+    st.session_state.memory.append({"role": "assistant", "think_content": response['think_content'], "response_content": response['response_content'], "source": sources, "time": round(end_time - start_time, 2)})
 
 #-----------------------------------------------------------------------------#
 

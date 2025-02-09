@@ -1,5 +1,5 @@
 
-from langchain_ollama import OllamaLLM
+from langchain_ollama import ChatOllama
 from typing import Dict, Generator
 from ollama import Client
 
@@ -7,6 +7,7 @@ from controller.setting import SettingController
 
 import pandas as pd
 import humanize
+import re
 
 #=============================================================================#
 
@@ -17,15 +18,25 @@ class ModelController():
         self.SettingController = SettingController()
         self.llm_model         = self.SettingController.setting['paramater']['llm_model']
         self.base_url          = self.SettingController.setting['server']['base_url']
-        self.llm               = OllamaLLM(model=self.llm_model, base_url=self.base_url)
+        self.llm               = ChatOllama(model=self.llm_model, base_url=self.base_url)
         self.client            = Client(host=self.base_url)
 
 #-----------------------------------------------------------------------------#
 
-    def generate_response(self, messages: Dict) -> Generator:
-        
-        for chunk in self.llm.stream(messages):
-            yield chunk
+    def generate_response(self, messages: list) -> dict:
+
+        response = self.llm.invoke([(item['role'], item['response_content']) for item in messages])
+
+        match = re.search(r"<think>(.*?)</think>\s*(.*)", response.content, re.DOTALL)
+
+        if match:
+            think_content    = match.group(1).strip().replace("\n", "<br>")
+            response_content = match.group(2).strip()
+
+            return {"think_content": think_content, "response_content": response_content}
+
+        else:
+            return {"think_content": "", "response_content": response.content}
 
 #-----------------------------------------------------------------------------#
 
