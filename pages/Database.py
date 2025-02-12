@@ -328,15 +328,15 @@ if PDF_col2.button("新增", key=4):
 
     with database_status.status('資料處理中...', expanded=True) as update_status:
 
-        #DatabaseController.save_PDF(files)
+        DatabaseController.save_PDF(files)
 
         ModelController.unload_all_running_models()
 
-        #subprocess.run([f"{sys.executable}", "convert_controller.py", selected_database])
+        subprocess.run([f"{sys.executable}", "convert_controller.py", selected_database])
 
-        #ToolController.remove_temp_PDF("temp_PDF")
+        ToolController.remove_temp_PDF("temp_PDF")
 
-        #DatabaseController.add_database(files)
+        DatabaseController.add_database(files)
 
         update_status.update(label="資料處理完成!", state="complete", expanded=False)
 
