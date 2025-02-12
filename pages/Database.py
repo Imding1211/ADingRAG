@@ -3,6 +3,7 @@ from controller.database import DatabaseController
 from controller.setting import SettingController
 from controller.model import ModelController
 from controller.tool import ToolController
+from controller.convert import PDF_to_MD
 
 import streamlit as st
 import subprocess
@@ -327,14 +328,15 @@ if PDF_col2.button("新增", key=4):
 
     with database_status.status('資料處理中...', expanded=True) as update_status:
 
-        DatabaseController.save_PDF(files)
+        #DatabaseController.save_PDF(files)
 
-        #subprocess.run(["marker", "--workers", "2", f"{working_dir}/temp_PDF", f"{working_dir}/storage/{selected_database}/output_MD"])
-        subprocess.run([f"{sys.executable}", "convert_controller.py", selected_database])
+        ModelController.unload_all_running_models()
 
-        ToolController.remove_temp_PDF("temp_PDF")
+        #subprocess.run([f"{sys.executable}", "convert_controller.py", selected_database])
 
-        DatabaseController.add_database(files)
+        #ToolController.remove_temp_PDF("temp_PDF")
+
+        #DatabaseController.add_database(files)
 
         update_status.update(label="資料處理完成!", state="complete", expanded=False)
 

@@ -6,6 +6,7 @@ from ollama import Client
 from controller.setting import SettingController
 
 import pandas as pd
+import requests
 import humanize
 import re
 
@@ -56,3 +57,57 @@ class ModelController():
             })
 
         return df_info
+
+#-----------------------------------------------------------------------------#
+
+    def get_running_models(self):
+        
+        url = self.base_url + "api/ps"
+        
+        try:
+            response = requests.get(url, timeout=10)
+
+            response.raise_for_status()
+
+            models = response.json()
+
+            return models
+
+        except requests.exceptions.RequestException as e:
+
+            print(f"API 請求錯誤: {e}")
+
+            return None
+
+#-----------------------------------------------------------------------------#
+
+    def unload_running_model(self, model_name):
+        
+        url = self.base_url + "api/generate"
+        
+        payload = {"model": model_name, "keep_alive": 0}
+        
+        try:
+            response = requests.post(url, json=payload, timeout=10)
+
+            response.raise_for_status()
+
+            return response.json()
+        
+        except requests.exceptions.RequestException as e:
+
+            print(f"API 請求錯誤: {e}")
+
+            return None
+
+#-----------------------------------------------------------------------------#
+
+    def unload_all_running_models(self):
+
+        models = self.get_running_models()
+        
+        for model in models['models']:
+
+            response = self.unload_running_model(model['name'])
+
+            print(response)
