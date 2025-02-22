@@ -80,12 +80,13 @@ st.header("語言模型")
 
 #-----------------------------------------------------------------------------#
 
-llm_warning       = st.empty()
+llm_warning = st.empty()
 
 #-----------------------------------------------------------------------------#
 
 if selected_llm in list_llm_model:
     index_llm = list_llm_model.index(selected_llm)
+    
 else:
     llm_warning.error(f'{selected_llm}語言模型不存在，請重新選擇。', icon="🚨")
     index_llm = None

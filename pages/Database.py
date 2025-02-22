@@ -1,13 +1,11 @@
 
 from controller.database import DatabaseController
 from controller.setting import SettingController
+from controller.convert import ConvertController
 from controller.model import ModelController
 from controller.tool import ToolController
-from controller.convert import PDF_to_MD
 
 import streamlit as st
-import subprocess
-import sys
 import os
 
 #=============================================================================#
@@ -23,20 +21,28 @@ create_time_database = SettingController.setting['database'][selected_database][
 remarks_database     = SettingController.setting['database'][selected_database]['remarks']
 index_database       = list_database.index(selected_database)
 
+ConvertController    = ConvertController()
+
 ModelController      = ModelController()
 ollama_info          = ModelController.ollama_to_dataframe()
 list_embedding_model = ollama_info[ollama_info["family"] == "bert"]["name"].tolist()
 
 ToolController = ToolController()
 
+#-----------------------------------------------------------------------------#
+
+df_column = ['source', 'size', 'chunk_size', 'chunk_overlap', 'start_date', 'end_date', 'version', 'latest']
+
 #=============================================================================#
 
 def change_database():
+
     SettingController.change_database(st.session_state.database)
 
 #-----------------------------------------------------------------------------#
 
 def change_embedding_model():
+
     SettingController.change_embedding_model(selected_database, st.session_state.embedding_model)
 
 #-----------------------------------------------------------------------------#
@@ -82,6 +88,7 @@ def edit_database():
 
 @st.dialog("新增資料庫")
 def add_database():
+
     database = st.text_input("輸入資料庫名稱:")
     model    = st.selectbox("選擇嵌入模型:", list_embedding_model, index=None, placeholder="請選擇嵌入模型")
     remarks  = st.text_area("資料庫備注")
@@ -94,6 +101,7 @@ def add_database():
 
 @st.dialog("移除資料庫")
 def remove_database():
+    
     database = st.selectbox("選擇資料庫:", list_database, index=None, placeholder="請選擇資料庫")
 
     if st.button("確認", key=8):
@@ -303,7 +311,7 @@ PDF_col1, PDF_col2 = st.columns([9,1])
 
 df = DatabaseController.database_to_dataframes()
 
-df_event = df.loc[df.groupby(['source', 'start_date'])['size'].idxmax(), ['source', 'size', 'chunk_size', 'chunk_overlap', 'start_date', 'end_date', 'version', 'latest']]
+df_event = df.loc[df.groupby(['source', 'start_date'])['size'].idxmax(), df_column]
 
 df_event = df_event.sort_values(by='start_date', ascending=False)
 
@@ -332,7 +340,7 @@ if PDF_col2.button("新增", key=4):
 
         ModelController.unload_all_running_models()
 
-        subprocess.run([f"{sys.executable}", "convert_controller.py", selected_database])
+        ConvertController.PDF_to_MD(selected_database)
 
         ToolController.remove_temp_PDF("temp_PDF")
 

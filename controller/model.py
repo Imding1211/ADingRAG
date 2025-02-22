@@ -1,6 +1,6 @@
 
 from langchain_ollama import ChatOllama
-from typing import Dict, Generator
+from typing import Dict
 from ollama import Client
 
 from controller.setting import SettingController

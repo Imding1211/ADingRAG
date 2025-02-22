@@ -16,6 +16,7 @@ selected_base_url      = SettingController.setting['server']['base_url']
 #=============================================================================#
 
 def change_query_num():
+	
 	SettingController.change_query_num(st.session_state.query_num)
 	
 #=============================================================================#

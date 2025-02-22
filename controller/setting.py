@@ -16,7 +16,7 @@ class SettingController():
 
 		self.default_setting = {
 		    "paramater": {
-		        "llm_model": "llama3.2-vision:latest",
+		        "llm_model": "llama3.2:3b",
 		        "prompt": "{context}\n\n---\n\n根據以上資料用繁體中文回答問題: {question}\n",
 		        "query_num": 2
 		    },
@@ -43,18 +43,21 @@ class SettingController():
 #-----------------------------------------------------------------------------#
 
 	def load_setting(self):
+
 		with open('setting.json', 'r', encoding='utf-8') as setting_file:
 		    self.setting = json.load(setting_file)
 
 #-----------------------------------------------------------------------------#
 
 	def generate_setting(self, new_setting):
+
 		with open('setting.json', 'w', encoding='utf-8') as setting_file:
 			setting_file.write(json.dumps(new_setting, indent=4, ensure_ascii=False))
 
 #-----------------------------------------------------------------------------#
 
 	def generate_default_setting(self):
+		
 		with open('setting.json', 'w', encoding='utf-8') as setting_file:
 			setting_file.write(json.dumps(self.default_setting, indent=4, ensure_ascii=False))
 

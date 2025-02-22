@@ -1,13 +1,13 @@
 {
     "paramater": {
-        "llm_model": "llama3.2-vision:latest",
+        "llm_model": "llama3.2:3b",
         "prompt": "{context}\n\n---\n\n根據以上資料用繁體中文回答問題: {question}\n",
         "query_num": 2
     },
     "database": {
         "selected": "default",
         "default": {
-            "create_time": "2025/02/12 14:10:13",
+            "create_time": "2025/02/22 09:30:15",
             "path": "storage/default/database",
             "embedding_model": "all-minilm:latest",
             "remarks": "Default database."

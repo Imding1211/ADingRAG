@@ -1,11 +1,8 @@
 
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_ollama import OllamaLLM
 
 from controller.database import DatabaseController
 from controller.setting import SettingController
-
-from typing import Dict, Generator
 
 #=============================================================================#
 
@@ -54,6 +51,7 @@ class QueryController():
         for doc in query_results:
             if len(doc.metadata['image_text']):
                 preview_text[doc.metadata['title']] = doc.metadata['image_text']
+                
             else:
                 preview_text[doc.metadata['title']] = doc.metadata['raw_text']
 

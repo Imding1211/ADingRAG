@@ -1,6 +1,5 @@
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_text_splitters import MarkdownTextSplitter
 from langchain_core.documents import Document
 from langchain_ollama import OllamaEmbeddings
 from langchain_chroma import Chroma
@@ -8,7 +7,6 @@ from langchain_chroma import Chroma
 from controller.setting import SettingController
 from controller.tool import ToolController
 
-from ollama import Client
 from pathlib import Path
 
 import pandas as pd
@@ -188,6 +186,7 @@ class DatabaseController():
 #-----------------------------------------------------------------------------#
 
     def clear_database(self, delete_ids):
+
         if delete_ids:
             self.database.delete(ids=delete_ids)
 
@@ -207,10 +206,6 @@ class DatabaseController():
 #-----------------------------------------------------------------------------#
 
     def markdown_to_section(self, PDF_name, markdown, current_version):
-
-        meta = self.load_meta(PDF_name, current_version)
-
-        headers = ["#"*hd["level"] + " " + hd["title"] for hd in meta["computed_toc"] if hd["level"] <= 2]
 
         PDF_info = {
             "PDF_name" : PDF_name,
@@ -238,13 +233,12 @@ class DatabaseController():
             PDF_info["sections"].append(section_info)
             section_id += 1
 
-        pattern      = '|'.join(re.escape(header) for header in headers)
-        content_list = re.split(f'(?i)({pattern})', markdown)
+        parsed_sections = self.parse_text(markdown)
 
-        for index in range(1, len(content_list), 2):
+        for section in parsed_sections:
 
-            title    = content_list[index].split(' ', maxsplit=1)[-1].strip()
-            raw_text = content_list[index + 1].strip() if index + 1 < len(content_list) else ""
+            title    = section['title']
+            raw_text = section['content']
 
             section_info = {
                 "ID"           : section_id,
@@ -419,21 +413,6 @@ class DatabaseController():
 
 #-----------------------------------------------------------------------------#
 
-    def load_meta(self, PDF_name, current_version):
-
-        path = f"storage/{self.database_name}/output_MD/"
-
-        meta_folder = PDF_name + '_v' + str(current_version+1) + '/'
-
-        meta_name = PDF_name + '_v' + str(current_version+1) + '_meta.json'
-        
-        with open(path+meta_folder+meta_name, 'r', encoding="utf-8") as file:
-            meta = json.load(file)
-        
-        return meta
-
-#-----------------------------------------------------------------------------#
-
     def load_markdown(self, PDF_name, current_version):
 
         path = f"storage/{self.database_name}/output_MD/"
@@ -446,3 +425,26 @@ class DatabaseController():
             markdown = file.read()
         
         return markdown
+
+#-----------------------------------------------------------------------------#
+
+    def parse_text(self, text):
+        sections = []
+        lines = text.split('\n')
+        current_section = {"title": "", "content": ""}
+        
+        for line in lines:
+            match = re.match(r'^(#+)\s*(.*)', line)
+            if match:
+                if current_section["title"]:
+                    sections.append(current_section)
+                    current_section = {"title": "", "content": ""}
+                
+                current_section["title"] = match.group(2)
+            else:
+                current_section["content"] += line + "\n"
+        
+        if current_section["title"]:
+            sections.append(current_section)
+        
+        return sections
