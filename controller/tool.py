@@ -57,6 +57,7 @@ class ToolController():
                 if os.path.isfile(file_path) and filename.lower().endswith('.pdf'):
                     os.remove(file_path)
                     print(f"已刪除檔案: {file_path}")
+                    
             except Exception as e:
                 print(f"無法刪除檔案 {file_path}，錯誤: {e}")
 

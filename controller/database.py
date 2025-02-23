@@ -233,6 +233,8 @@ class DatabaseController():
             PDF_info["sections"].append(section_info)
             section_id += 1
 
+        markdown = re.sub(r"\\tag\{.*?\}", "", markdown)
+
         parsed_sections = self.parse_text(markdown)
 
         for section in parsed_sections:
@@ -245,19 +247,19 @@ class DatabaseController():
                 "type"         : "Text",
                 "title"        : title,
                 "raw_text"     : raw_text,
-                "propositions" : [f"Title:{title}"],
+                "propositions" : [f"PDF name:{PDF_name}, Title:{title}", f"檔案名稱:{PDF_name}, 段落標題:{title}"],
                 "image_text"   : raw_text,
                 "image"        : []
             }
 
-            image_list = [image for image in re.findall(r'(!\[(?P<image_title>[^\]]+)\]\((?P<image_path>[^\)"\s]+)\s*([^\)]*)\))', raw_text)]
+            image_list = [match.group(1) for match in re.finditer(r'!\[\]\(([^)]+\.(?:jpeg|jpg|png|gif))\)', raw_text, re.IGNORECASE)]
 
             if len(image_list):
 
                 for image in image_list:
 
-                    image_md   = image[0]
-                    image_name = image[1]
+                    image_md   = f"![]({image})"
+                    image_name = image
                     image_path = f'storage/{self.database_name}/output_MD/{PDF_name}_v{current_version+1}/{image_name}'
                     
                     image_info = {

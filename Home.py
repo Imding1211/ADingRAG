@@ -8,6 +8,9 @@ import streamlit as st
 import time
 import uuid
 
+import torch
+torch.classes.__path__ = []
+
 #=============================================================================#
 
 DatabaseController = DatabaseController()
