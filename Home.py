@@ -128,16 +128,19 @@ if question := st.chat_input("輸入問題:"):
     st.session_state.memory.append({"role": "user", "think_content": "", "response_content": prompt, "source": [], "time": 0})
     st.session_state.preview = preview_text
 
-    start_time = time.time()
 
-    response = ModelController.generate_response(st.session_state.memory)
-
-    end_time = time.time()
 
 #-----------------------------------------------------------------------------#
 
     with chat_container.chat_message("assistant", avatar="🤖"):
 
+        start_time = time.time()
+
+        with st.spinner("思考中..."):
+            response = ModelController.generate_response(st.session_state.memory)
+
+        end_time = time.time()
+    
         if len(response['think_content']):
             st.html(f'''
                 <body>

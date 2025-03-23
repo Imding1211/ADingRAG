@@ -16,7 +16,7 @@ class SettingController():
 
 		self.default_setting = {
 		    "paramater": {
-		        "llm_model": "llama3.2:3b",
+		        "llm_model": "gemma3:4b",
 		        "prompt": "{context}\n\n---\n\n根據以上資料用繁體中文回答問題: {question}\n",
 		        "query_num": 2
 		    },
@@ -31,7 +31,8 @@ class SettingController():
 		    },
 		    "text_splitter": {
 		        "chunk_size": 150,
-		        "chunk_overlap": 50
+		        "chunk_overlap": 50,
+		        "llm_model": "gemma3:4b"
 		    },
 		    "server": {
 		        "base_url": "http://localhost:11434/"
@@ -63,11 +64,11 @@ class SettingController():
 
 #-----------------------------------------------------------------------------#
 
-	def change_llm_model(self, model_name):
+	def change_llm_model(self, key_value, model_name):
 
 		if len(model_name) > 0:
 
-			self.setting['paramater']['llm_model'] = model_name
+			self.setting[key_value]['llm_model'] = model_name
 
 			self.generate_setting(self.setting)
 
@@ -77,7 +78,7 @@ class SettingController():
 
 		if len(model_name) > 0:
 
-			self.setting["database"][database]['embedding_model'] = model_name
+			self.setting['database'][database]['embedding_model'] = model_name
 
 			self.generate_setting(self.setting)
 
@@ -129,7 +130,7 @@ class SettingController():
 
 		if len(remarks) > 0:
 
-			self.setting["database"][database]['remarks'] = remarks
+			self.setting['database'][database]['remarks'] = remarks
 
 			self.generate_setting(self.setting)
 		

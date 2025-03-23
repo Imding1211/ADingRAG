@@ -1,21 +1,34 @@
 {
     "paramater": {
-        "llm_model": "llama3.2:3b",
+        "llm_model": "gemma3:4b",
         "prompt": "{context}\n\n---\n\n根據以上資料用繁體中文回答問題: {question}\n",
         "query_num": 2
     },
     "database": {
-        "selected": "default",
+        "selected": "Paper",
         "default": {
-            "create_time": "2025/02/23 23:59:17",
+            "create_time": "2025/03/22 22:19:22",
             "path": "storage/default/database",
             "embedding_model": "all-minilm:latest",
             "remarks": "Default database."
+        },
+        "SOP": {
+            "create_time": "2025/03/22 22:29:13",
+            "path": "storage/SOP/database",
+            "embedding_model": "zylonai/multilingual-e5-large:latest",
+            "remarks": "神通SOP資料庫"
+        },
+        "Paper": {
+            "create_time": "2025/03/22 22:53:25",
+            "path": "storage/Paper/database",
+            "embedding_model": "all-minilm:latest",
+            "remarks": "文獻Paper資料庫"
         }
     },
     "text_splitter": {
         "chunk_size": 150,
-        "chunk_overlap": 50
+        "chunk_overlap": 50,
+        "llm_model": "gemma3:4b"
     },
     "server": {
         "base_url": "http://localhost:11434/"

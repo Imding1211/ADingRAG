@@ -1,5 +1,6 @@
 
 from controller.setting import SettingController
+from controller.model import ModelController
 
 import streamlit as st
 
@@ -11,14 +12,23 @@ selected_query_num     = SettingController.setting['paramater']['query_num']
 selected_database      = SettingController.setting['database']['selected']
 selected_chunk_size    = SettingController.setting['text_splitter']['chunk_size']
 selected_chunk_overlap = SettingController.setting['text_splitter']['chunk_overlap']
+selected_llm           = SettingController.setting['text_splitter']['llm_model']
 selected_base_url      = SettingController.setting['server']['base_url']
+
+ModelController = ModelController()
+ollama_info     = ModelController.ollama_to_dataframe()
+list_llm_model  = ollama_info[ollama_info["family"] != "bert"]["name"].tolist()
 
 #=============================================================================#
 
 def change_query_num():
-	
 	SettingController.change_query_num(st.session_state.query_num)
-	
+
+#-----------------------------------------------------------------------------#
+
+def change_llm_model():
+    SettingController.change_llm_model("text_splitter", st.session_state.llm_model)
+
 #=============================================================================#
 
 st.set_page_config(layout="wide")
@@ -36,6 +46,27 @@ query_num_container.slider("資料檢索數量",
 	on_change=change_query_num,
 	key="query_num",
 	)
+
+#-----------------------------------------------------------------------------#
+
+propositions_llm_container = st.container(border=True)
+
+llm_warning = propositions_llm_container.empty()
+
+if selected_llm in list_llm_model:
+    index_llm = list_llm_model.index(selected_llm)
+    
+else:
+    llm_warning.error(f'{selected_llm}語言模型不存在，請重新選擇。', icon="🚨")
+    index_llm = None
+
+propositions_llm_container.selectbox("請選擇命題使用的語言模型:", 
+    list_llm_model, 
+    on_change=change_llm_model, 
+    key='llm_model', 
+    index=index_llm,
+    placeholder='語言模型不存在，請重新選擇。'
+    )
 
 #-----------------------------------------------------------------------------#
 

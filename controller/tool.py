@@ -13,12 +13,13 @@ class ToolController():
 
     def __init__(self):
 
-        self.SettingController = SettingController()
-        self.base_url          = self.SettingController.setting['server']['base_url']
+        self.SettingController  = SettingController()
+        self.base_url           = self.SettingController.setting['server']['base_url']
+        self.propositions_model = self.SettingController.setting['text_splitter']['llm_model']
 
         self.propositions_llm = Ollama(
-            model='llama3.2:3b', 
-            request_timeout=600.0, 
+            model=self.propositions_model, 
+            request_timeout= 600.0, 
             base_url=self.base_url, 
             json_mode=True
             )

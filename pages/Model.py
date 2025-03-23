@@ -17,7 +17,7 @@ list_embedding_model = ollama_info[ollama_info["family"] == "bert"]["name"].toli
 #=============================================================================#
 
 def change_llm_model():
-    SettingController.change_llm_model(st.session_state.llm_model)
+    SettingController.change_llm_model("paramater", st.session_state.llm_model)
 
 #=============================================================================#
 
