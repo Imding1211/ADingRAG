@@ -5,24 +5,12 @@
         "query_num": 2
     },
     "database": {
-        "selected": "Paper",
+        "selected": "default",
         "default": {
-            "create_time": "2025/03/22 22:19:22",
+            "create_time": "2025/03/25 14:08:16",
             "path": "storage/default/database",
             "embedding_model": "all-minilm:latest",
             "remarks": "Default database."
-        },
-        "SOP": {
-            "create_time": "2025/03/22 22:29:13",
-            "path": "storage/SOP/database",
-            "embedding_model": "zylonai/multilingual-e5-large:latest",
-            "remarks": "神通SOP資料庫"
-        },
-        "Paper": {
-            "create_time": "2025/03/22 22:53:25",
-            "path": "storage/Paper/database",
-            "embedding_model": "all-minilm:latest",
-            "remarks": "文獻Paper資料庫"
         }
     },
     "text_splitter": {
