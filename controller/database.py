@@ -222,7 +222,7 @@ class DatabaseController():
                 "ID"           : section_id,
                 "type"         : "Table",
                 "title"        : f"Table:{index+1}",
-                "raw_text"     : table,
+                "raw_text"     : re.sub(r'<br>', '', table),
                 "propositions" : [],
                 "image_text"   : "",
                 "image"        : []
