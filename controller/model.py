@@ -31,7 +31,7 @@ class ModelController():
         match = re.search(r"<think>(.*?)</think>\s*(.*)", response.content, re.DOTALL)
 
         if match:
-            think_content    = match.group(1).strip().replace("\n", "<br>")
+            think_content    = match.group(1).strip()
             response_content = match.group(2).strip()
 
             return {"think_content": think_content, "response_content": response_content}
@@ -46,9 +46,8 @@ class ModelController():
         json_info = self.client.list()
 
         df_info = pd.DataFrame({
-            'name'              : [info['name'] for info in json_info['models']],
             'model'             : [info['model'] for info in json_info['models']],
-            'date'              : [info['modified_at'].split("T")[0]+" "+info['modified_at'].split("T")[1].split(".")[0] for info in json_info['models']],
+            'date'              : [info['modified_at'].strftime("%Y-%m-%d %H:%M:%S") for info in json_info['models']],
             'size'              : [humanize.naturalsize(info['size'], binary=True) for info in json_info['models']],
             'format'            : [info['details']['format'] for info in json_info['models']],
             'family'            : [info['details']['family'] for info in json_info['models']],

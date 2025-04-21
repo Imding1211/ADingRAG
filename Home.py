@@ -85,13 +85,8 @@ for message in st.session_state.messages[1:]:
         with chat_container.chat_message("assistant", avatar="🤖"):
 
             if len(message["think_content"]):
-                st.html(f'''
-                    <body>
-                        <details>
-                            <summary>思考過程</summary>
-                            <p>{message['think_content']}</p>
-                        </details>
-                    </body>''')
+                with st.expander("思考過程"):
+                    st.write(message['think_content'])
 
             st.markdown(message["response_content"])
 
@@ -142,13 +137,8 @@ if question := st.chat_input("輸入問題:"):
         end_time = time.time()
     
         if len(response['think_content']):
-            st.html(f'''
-                <body>
-                    <details>
-                        <summary>思考過程</summary>
-                        <p>{response['think_content']}</p>
-                    </details>
-                </body>''')
+            with st.expander("思考過程"):
+                st.write(response['think_content'])
 
         st.write_stream(text_to_stream(response['response_content']))
 

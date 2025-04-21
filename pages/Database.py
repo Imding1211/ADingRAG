@@ -25,7 +25,7 @@ ConvertController    = ConvertController()
 
 ModelController      = ModelController()
 ollama_info          = ModelController.ollama_to_dataframe()
-list_embedding_model = ollama_info[ollama_info["family"] == "bert"]["name"].tolist()
+list_embedding_model = ollama_info[ollama_info["family"] == "bert"]["model"].tolist()
 
 ToolController = ToolController()
 

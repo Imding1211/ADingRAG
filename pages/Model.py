@@ -11,8 +11,8 @@ selected_llm       = SettingController.setting['paramater']['llm_model']
 
 ModelController      = ModelController()
 ollama_info          = ModelController.ollama_to_dataframe()
-list_llm_model       = ollama_info[ollama_info["family"] != "bert"]["name"].tolist()
-list_embedding_model = ollama_info[ollama_info["family"] == "bert"]["name"].tolist()
+list_llm_model       = ollama_info[ollama_info["family"] != "bert"]["model"].tolist()
+list_embedding_model = ollama_info[ollama_info["family"] == "bert"]["model"].tolist()
 
 #=============================================================================#
 
@@ -24,12 +24,6 @@ def change_llm_model():
 st.set_page_config(layout="wide")
 
 info_config = {
-    "name": st.column_config.TextColumn(
-        "建立名稱", 
-        help="建立模型時的名稱", 
-        max_chars=100, 
-        width="small"
-    ),
     "model": st.column_config.TextColumn(
         "模型名稱", 
         help="模型名稱", 

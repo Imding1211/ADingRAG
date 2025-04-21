@@ -16,7 +16,7 @@ selected_llm           = SettingController.setting['text_splitter']['llm_model']
 
 ModelController = ModelController()
 ollama_info     = ModelController.ollama_to_dataframe()
-list_llm_model  = ollama_info[ollama_info["family"] != "bert"]["name"].tolist()
+list_llm_model  = ollama_info[ollama_info["family"] != "bert"]["model"].tolist()
 
 #=============================================================================#
 
