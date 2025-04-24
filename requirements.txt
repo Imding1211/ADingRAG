@@ -1,13 +1,13 @@
 marker-pdf==1.5.2
 
-llama-index-llms-ollama
-llama_index
+llama-index-llms-ollama==0.4.2
+llama_index==0.12.31
 
-langchain_text_splitters
-langchain-ollama
-langchain_chroma
+langchain_text_splitters==0.3.8
+langchain-ollama==0.2.1
+langchain_chroma==0.2.3
 
-streamlit
-humanize
-PyPDF2
-ollama
+streamlit==1.44.1
+humanize==4.12.2
+PyPDF2==3.0.1
+ollama==0.4.8
