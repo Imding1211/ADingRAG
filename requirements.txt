@@ -1,4 +1,4 @@
-marker-pdf==1.5.2
+marker-pdf==1.7.5
 
 llama-index-llms-ollama==0.4.2
 llama_index==0.12.31
