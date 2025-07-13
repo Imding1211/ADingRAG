@@ -1,22 +1,16 @@
 {
     "paramater": {
-        "llm_model": "qwen3:8b",
+        "llm_model": "gemma3:4b",
         "prompt": "{context}\n\n---\n\n根據以上資料用繁體中文回答問題: {question}\n",
         "query_num": 2
     },
     "database": {
-        "selected": "demo",
+        "selected": "default",
         "default": {
-            "create_time": "2025/04/21 18:29:43",
+            "create_time": "2025/07/13 23:18:09",
             "path": "storage/default/database",
             "embedding_model": "all-minilm:latest",
             "remarks": "Default database."
-        },
-        "demo": {
-            "create_time": "2025/06/27 22:35:15",
-            "path": "storage/demo/database",
-            "embedding_model": "all-minilm:latest",
-            "remarks": ""
         }
     },
     "text_splitter": {

@@ -78,11 +78,11 @@ text_container = col2.container(border=False, height=500)
 for message in st.session_state.messages[1:]:
 
     if message["role"] == "user":
-        with chat_container.chat_message("user", avatar="🦖"):
+        with chat_container.chat_message("user"):
             st.markdown(message["response_content"])
 
     else:
-        with chat_container.chat_message("assistant", avatar="🤖"):
+        with chat_container.chat_message("assistant"):
 
             if len(message["think_content"]):
                 with st.expander("思考過程"):
@@ -108,7 +108,7 @@ for message in st.session_state.messages[1:]:
 
 if question := st.chat_input("輸入問題:"):
 
-    with chat_container.chat_message("user", avatar="🦖"):
+    with chat_container.chat_message("user"):
         st.markdown(question)
 
 #-----------------------------------------------------------------------------#
@@ -127,7 +127,7 @@ if question := st.chat_input("輸入問題:"):
 
 #-----------------------------------------------------------------------------#
 
-    with chat_container.chat_message("assistant", avatar="🤖"):
+    with chat_container.chat_message("assistant"):
 
         start_time = time.time()
 

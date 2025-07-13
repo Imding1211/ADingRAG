@@ -1,0 +1,277 @@
+{
+    "PDF_name": "福委會員工旅遊補助辦法(999-99-3-08)V2",
+    "sections": [
+        {
+            "ID": 1,
+            "type": "Table",
+            "title": "Table:1",
+            "raw_text": "| 文件標題      |              | 福委會員工旅遊補助辦法                                                |  |  |\n|-----------|--------------|------------------------------------------------------------|--|--|\n| 文件編號      | 999-99-3-08  |                                                            |  |  |\n| 製作    | 福委會          |                                                            |  |  |\n| 審查    | 主任委員         |                                                            |  |  |\n| 核淮    | 蘇亮       |                                                            |  |  |\n| 發行日期      | 版次       | 摘要內容                                                       |  |  |\n| 100-11-28 | V1.0         | 新發行                                                        |  |  |\n|           |              | 神通電腦分割新設神通資訊科技股份有限公司暨神通電腦與神通資                              |  |  |\n|           |              | 科成立聯合福利委員會,重新發行文件。                                         |  |  |\n| 102-04-02 | V1.1         | 依實務作業情形修改:                                                 |  |  |\n|           |              | (1)修改5.1.2旅遊活動主辦人,各項旅遊行程計畫應包含之要項內              |  |  |\n|           |              | 容。                                                         |  |  |\n|           |              | (2)修改5.3.3訂金收取相關規定-(4),因公務無法參加者,應於出發           |  |  |\n|           |              | 前通知相關人員並取得事業群最高主管的核准。                                      |  |  |\n|           |              | (3)5.3.5請款證明文件-(5),團體照片需加註員工編號及姓名;修改           |  |  |\n|           |              | 增加請款證明文件(6)已送簽核可之旅遊簽呈。                                     |  |  |\n|           |              | (4)修改5.3.6出團人數規定。                              |  |  |\n|           |              | (5)增加附件二                                               |  |  |\n| 103-05-14 | V1.2         | 依實務作業情形修改:                                                 |  |  |\n|           |              | (1)修改5.3.2 旅遊補助金使用規定/5.3.3 訂金收取相關規定,增加                 |  |  |\n|           | 活動主辦人相關作業規定。 |                                                            |  |  |\n|           |              | (2)5.3.5請款證明文件:增加(7)旅遊人員保險名單。                      |  |  |\n|           |              | (3)增加附件10.2呈核會辦單範本                                 |  |  |\n| 106-03-10 | V1.3         | 依實務作業情形修改:                                                 |  |  |\n|           |              | (1)修改5.1.2旅遊餐費預算由原1,000元調整至1,500元。 |  |  |\n|           |              | (2)修改5.3.6出團人數規定:國內團人數由十五人調整為十人。                   |  |  |\n| 107-03-14 | V2.0         | 依實務作業情形修改:                                                 |  |  |\n|           |              | (1)新增定義4.1旅行社協辦/4.2主辦人自辦自由行/4.3旅行社機加酒      |  |  |\n|           |              | 自由行。                                                       |  |  |\n|           |              | (2)修改5.3.1~5.3.10旅遊補助資格、補助金使用、請款證明文件等              |  |  |\n|           |              | 相關作業規定。                                                    |  |  |\n|           |              | (3)增修8.1輸入項目描述。                                    |  |  |\n| 108-03-12 | V2.1         | 依實務作業情形修改:                                                 |  |  |\n|           |              | (1)5.3.9.2請款單據證明文件,依旅遊地區及活動規劃方式區分修訂                    |  |  |\n|           |              | 相關應提供之請款證明單據。                                              |  |  |\n|           |              | (2)修改5.3.9.3-(四)住宿費費用核銷有效單據說明。                         |  |  |\n|           |              | (3)5.3.4-(7)因故無法參加旅遊者扣除無法退還費用後,仍保有當年度                      |  |  |\n|           |              | 旅遊補助資格。                                                    |  |  |\n",
+            "propositions": [
+                "此表格記錄了一份「福委會員工旅遊補助辦法」的歷程版本變更紀錄。",
+                "該文件由福委會製作，並經過主任委員審查及蘇亮核准。",
+                "文件歷時變更了七次版本（V1.0至V2.1），每次變更都基於實際作業情形。",
+                "各版本變更主要涉及旅遊補助金的金額、出團人數限制、請款證明文件的要求、以及旅遊活動主辦人相關規定。",
+                "版本變更內容包括：調整旅遊餐費預算、修改出團人數限制、增加請款證明文件要求、以及重新定義旅行社協辦和自由行等。",
+                "總體而言，此文件展示了福委會員工旅遊補助辦法在實際運用過程中不斷調整和完善的過程。"
+            ],
+            "image_text": "",
+            "image": []
+        },
+        {
+            "ID": 2,
+            "type": "Table",
+            "title": "Table:2",
+            "raw_text": "| 110-04-06  | V2.2 | 依實務作業情形修改:                                          |  |  |  |  |\n|------------|------|-----------------------------------------------------|--|--|--|--|\n|            |      | (1)修訂5.3.3旅遊補助金餐費上限為2,500元,及每團須至少安排 |  |  |  |  |\n|            |      | 兩個活動以上。                                             |  |  |  |  |\n|            |      | (2)修改5.3.6出團人數規定:國內團人數由十人調整為五人。             |  |  |  |  |\n| 2023/07/17 | V2.3 | 依實務作業情形修改:                                          |  |  |  |  |\n|            |      | (1)增修5.3.7旅遊公告期間須在出團日前至少兩週以上。           |  |  |  |  |\n|            |      | (2)刪除原5.3.8簽呈文件須檢附員工旅遊名單、福委會公告證明        |  |  |  |  |\n|            |      | 之規定。                                                |  |  |  |  |\n",
+            "propositions": [
+                "此表格記錄了兩次旅遊補助方案的修正版本，分別於2023/07/17和110-04-06更新。",
+                "修正版本主要針對出團人數、餐費上限以及相關文件要求進行調整。",
+                "2023/07/17的版本修改了出團人數上限，將國內團從十人調整為五人，並新增了旅遊公告期間的規定。",
+                "110-04-06的版本修改了旅遊補助金餐費上限為2,500元，並要求每團至少安排兩個活動以上。",
+                "總體而言，這些修正旨在提升旅遊補助方案的執行效率和管理規範。"
+            ],
+            "image_text": "",
+            "image": []
+        },
+        {
+            "ID": 3,
+            "type": "Table",
+            "title": "Table:3",
+            "raw_text": "| 旅遊地區    | 國內  |                |              |\n|---------|---------|----------------|--------------|\n| 活動規劃方式  | 本島      | 離島             | 國外       |\n| 旅行社協辦   | 1.旅行社開立 | 1.旅行社開立之代收轉付收據 | 1.旅行社開立之代收轉付 |\n|         | 之代收轉付收  | 2.所有團員電子機票或船票  | 收據           |\n|         | 據       | 3.受補助團員登機證(搭船可 | 2.受補助團員電子機票  |\n|         | 2.投保證明文 | 免)             | 3.受補助團員登機證   |\n|         | 件       | 4.投保證明文件       | 4.投保證明文件     |\n| 員工自辦    | 1.所有活動中 | 1.所有活動中產生並已開立福 | 1.受補助團員機票費用核 |\n|         | 產生並已開立  | 委會統編與抬頭之費用單據   | 銷單據          |\n|         | 福委會統編與  | 2.受補助團員電子機票或船票 | 2.受補助團員電子機票  |\n|         | 抬頭之費用單  | 3.受補助團員登機證(搭船可 | 3.受補助團員登機證   |\n|         | 據       | 免)             | 4.受補助團員每晚住宿費 |\n|         | 2.投保證明文 | 4.投保證明文件       | 用單據          |\n|         | 件       |                | 5.其它活動中衍生之旅遊 |\n|         |         |                | 相關費用單據       |\n|         |         |                | 6.投保證明文件     |\n| 旅行加酒自由行 |         | 1.旅行社開立之代收轉付收據 | 1.旅行社開立之代收轉付 |\n|         |         | 2.受補助團員電子機票或船票 | 收據           |\n|         |         | 3.受補助團員登機證(搭船可 | 2.受補助團員電子機票  |\n|         |         | 免)             | 3.受補助團員登機證   |\n|         |         | 4.其它活動中衍生之旅遊相關 | 4.其它活動中衍生之旅遊 |\n|         |         | 費用單據           | 相關費用單據       |\n|         |         | 5.投保證明文件       | 5.投保證明文件     |\n",
+            "propositions": [
+                "此表格詳細說明了國內旅遊活動的費用處理方式，針對不同旅遊方式（本島、離島、國外及旅行加酒自由行）提供了不同的費用處理流程。",
+                "對於本島、離島及國外旅遊，旅行社需開立代收轉付收據，並提供團員的電子機票或船票。",
+                "對於旅行加酒自由行，則需提供其他活動中衍生之旅遊相關費用單據。",
+                "所有旅遊方式都需要提供投保證明文件。",
+                "總體而言，此表格規範了國內旅遊活動中，旅行社與團員之間在費用支付及文件處理上的協商機制。"
+            ],
+            "image_text": "",
+            "image": []
+        },
+        {
+            "ID": 4,
+            "type": "Text",
+            "title": "**1.**【目的**; Purpose**】:",
+            "raw_text": "\n\n\n為鼓勵員工參加戶外休閒娛樂活動,以調劑身心,維持同仁和諧情誼關係,並增進 員工向心力及對公司認同感,特制定本辦法。\n\n",
+            "propositions": [
+                "PDF name:福委會員工旅遊補助辦法(999-99-3-08)V2, Title:**1.**【目的**; Purpose**】:",
+                "檔案名稱:福委會員工旅遊補助辦法(999-99-3-08)V2, 段落標題:**1.**【目的**; Purpose**】:",
+                "本辦法旨在鼓勵員工參加戶外休閒娛樂活動。",
+                "其目的是調劑員工的身心。",
+                "此外，本辦法也希望維持員工之間的和諧情誼關係。",
+                "更重要的是，它還能增進員工向心力。",
+                "最後，它還能提升員工對公司的認同感。"
+            ],
+            "image_text": "",
+            "image": []
+        },
+        {
+            "ID": 5,
+            "type": "Text",
+            "title": "**2.**【範圍**; Scope**】:",
+            "raw_text": "\n凡經公司任用之員工已扣繳職工福利費並到職滿三個月者均適用之。\n\n",
+            "propositions": [
+                "PDF name:福委會員工旅遊補助辦法(999-99-3-08)V2, Title:**2.**【範圍**; Scope**】:",
+                "檔案名稱:福委會員工旅遊補助辦法(999-99-3-08)V2, 段落標題:**2.**【範圍**; Scope**】:",
+                "適用於公司任用之員工。",
+                "此規定適用於已扣繳職工福利費並到職滿三個月者。"
+            ],
+            "image_text": "",
+            "image": []
+        },
+        {
+            "ID": 6,
+            "type": "Text",
+            "title": "**3.**【參考資料**; Reference**】:",
+            "raw_text": "\n3.1 福委會福利措施 999-99-2-02\n\n",
+            "propositions": [
+                "PDF name:福委會員工旅遊補助辦法(999-99-3-08)V2, Title:**3.**【參考資料**; Reference**】:",
+                "檔案名稱:福委會員工旅遊補助辦法(999-99-3-08)V2, 段落標題:**3.**【參考資料**; Reference**】:",
+                "3.1福委會福利措施999-99-2-02"
+            ],
+            "image_text": "",
+            "image": []
+        },
+        {
+            "ID": 7,
+            "type": "Text",
+            "title": "**4.**【定義**; Terminology**】:",
+            "raw_text": "\n4.1 旅行社協辦:\n\n透過政府立案且優良旅行社協辦各項員工旅遊活動。\n\n4.2 旅遊活動主辦人自辦自由行:\n\n由旅遊活動主辦人自行規劃旅遊行程與編列預算,並妥善安排參與人員所有 旅程相關事項。\n\n4.3 旅行社機加酒自由行: 透過政府立案且優良旅行社協助預訂機票與住宿,並由旅遊活動主辦人自行規 劃旅遊行程與編列預算,並妥善安排參與人員機票與住宿外所有旅程相關事項。\n\n",
+            "propositions": [
+                "PDF name:福委會員工旅遊補助辦法(999-99-3-08)V2, Title:**4.**【定義**; Terminology**】:",
+                "檔案名稱:福委會員工旅遊補助辦法(999-99-3-08)V2, 段落標題:**4.**【定義**; Terminology**】:",
+                "透過政府立案且優良旅行社協辦各項員工旅遊活動。",
+                "旅遊活動主辦人自行規劃旅遊行程與編列預算，並妥善安排參與人員所有旅程相關事項。",
+                "透過政府立案且優良旅行社協助預訂機票與住宿，並由旅遊活動主辦人自行規劃旅遊行程與編列預算，並妥善安排參與人員機票與住宿外所有旅程相關事項。"
+            ],
+            "image_text": "",
+            "image": []
+        },
+        {
+            "ID": 8,
+            "type": "Text",
+            "title": "**5.**【作業程序**; Activities & Procedure**】:",
+            "raw_text": "\n以文字詳述相關單位執行此項作業之權責及執行步驟、流程圖及作業內容。\n\n- 5.1 職責(Role and Responsibility )\n  - 5.1.1 福委會\n\n每年第一季公告當年度員工旅遊補助辦法。\n\n5.1.2 旅遊活動主辦人\n\n旅遊活動主辦人應覓政府立案且優良旅行社協辦各項員工旅遊活動,或 由主辦人自行規劃旅遊行程計畫與編列預算),並妥善安排參與人員所 有旅程相關事項。\n\n5.2 流程架構(Process Flow)\n\n略\n\n- 5.3 處理程序(Process Description)\n  - 5.3.1 員工旅遊補助資格\n\n員工到職滿三個月且繳交職工福利金者,每人每年享有一次申請旅遊補 助資格,且不得讓渡予他人使用。\n\n5.3.2 員工旅遊補助金額\n\n符合補助資格者,每人每年以享有 5,000 元補助為原則,實際補助金 額授權福委會視該年度預算作調整。\n\n5.3.3 旅遊補助金使用規定\n\n(1)旅遊補助對象僅限參與旅遊之員工本人及其同行之人(限 1 人且不得讓 渡予他人使用)。\n\n(2)員工旅遊補助金的使用,只限於參加福委會舉辦之活動或符合 5.3.6 出團人數規定,並經福委會同意通過之活動。\n\n(3)補助限制:補助費用以參加旅遊行程期間,所有旅遊活動中產生之費 用(含食、住宿、交通、保險與遊樂區、藝文活動門票等)為限,其餘 個人於旅程中衍生之其它費用(如土產、禮品、菸酒類等費用)不得申 請補助。其中餐費費用,每人一餐以不超過 2,500 元為限,且每團活動至 少需安排兩個活動以上。\n\n(4)補助金額:須提供請款費用核銷有效單據申請,單據金額如有超過者, 以年度補助金額預算為上限,金額不足年度補助金額預算者則實報實支。\n\n(5)補助金款項須包含旅遊保險,投保金額需達觀光局最低規定保險金額。\n\n(6)不符合規定或資料不齊全者,福委會得不予補助。\n\n5.3.4 訂金與旅款收取相關規定\n\n(1)訂金應於各旅遊行程訂金收取時限內,繳交予福委會或旅遊活動主辦 人。\n\n(2)預收訂金以 10%為原則,主辦旅行社另有較高規定者,依其規定辦理。 (3)主辦旅行社未預收訂金時,福委會或旅遊活動主辦人為方便運作,仍 得預收訂金。\n\n(4)已收取訂金卻無法參加者,旅遊餘款之返還則依協辦旅行社或旅遊活 動主辦人之規定,分攤共同費用後按比例退還。\n\n(5)各旅遊行程舉辦前,福委會或旅遊活動主辦人應向參與人員收取旅遊 款差額,即旅遊總額扣除訂金之金額。旅遊補助金待旅遊行程結束後統一 申請退回員工帳戶。\n\n福委會員工旅遊補助辦法 3 / 7 神通資科機密文件 (6)因各旅遊行程所需前置作業時間不盡相同,旅遊款項、訂金的收取時\n\n間,依各行程公佈時間之規定收取。\n\n(7)同仁於繳納全額旅遊款項後,於出發日前因故臨時無法參加旅遊者, 旅遊活動主辦人得沒收所有已產生無法退還之支出,亦不得申請該次旅遊 補助金,但不喪失當年度旅遊補助申請資格。\n\n5.3.5 請假規定\n\n員工參與各項旅遊行程以不影響公務為原則,旅遊行程跨上班時間時,\n\n參加者應依規定自行於行程出發前完成請假、准假之程序。\n\n5.3.6 出團人數規定(出團人數以尚未請領過該年度旅遊補助之同仁計算)\n\n(1)國內團:基本出團人數為員工五人,員工同行之人不包含在內。\n\n(2)國外團:基本出團人數為員工五人,員工同行之人不包含在內。\n\n5.3.7 旅遊出團規定\n\n員工旅遊承辦人應先提交旅遊計畫,並在福委會簽呈審核通過後於福委會 公告欄安排員工旅遊公佈。\n\n公告期間須在出團日前至少兩週以上,內容應包含 :\n\n- (1)詳細旅遊行程表\n- (2)團費說明估價單\n- (3)訂金預收與旅遊款項退款方式\n- (4)報名方式與截止日期\n- (5)旅遊活動主辦人聯絡資訊\n- 5.3.8 簽呈審核文件\n\n不論是由員工自辦或福委主辦,須於出團日公告發布前至少預留兩週以上 作業時間,提交由員工旅遊承辦福委與福委會總幹事審核,並完成簽呈審 核流程。核准文件由旅遊活動主辦人留存,於請款時須佐附為請款證明文 件。\n\n簽呈需另檢附文件:\n\n- (1)呈核會辦單(附件 10.1)\n- (2)詳細旅遊行程表\n- (3)團費說明估價單\n- (4)旅行社旅遊契約書(旅行社協辦者需提供)\n- (5)旅行社立案登記證明文件(旅行社協辦者需提供)\n- 5.3.9 請款證明文件\n\n5.3.9.1 請款應檢附文件\n\n(1)福委會給付申請單\n\n- (2)請款費用核銷有效單據\n- (3)具有地標性團體照一張(照片加註員工工號及姓名)\n- (4)已核准之旅遊簽呈\n- (5)員工旅遊名單(附件 10.2)\n- (6)詳細旅遊行程表\n- (7)團費說明估價單\n- (8)福委會公告證明\n- (9)經福委會用印之旅行社旅遊契約書(旅行社協辦者需提供)\n\n(10)旅行社立案登記證明文件(旅行社協辦者需提供)\n\n5.3.9.2 依旅遊地區及活動規劃方式區分應提供之請款證明單據如下,請款費用核銷有 效的單據依 5.3.9.3 規定辦理:\n\n\n備註:員工旅遊以團進團出為原則。如同仁自辦國內離島或國外自由行時,受補助團員\n\n\n\n所搭乘來回航(船)班須為同日期、同地點,住宿亦須為同飯店。\n\n",
+            "propositions": [
+                "PDF name:福委會員工旅遊補助辦法(999-99-3-08)V2, Title:**5.**【作業程序**; Activities & Procedure**】:",
+                "檔案名稱:福委會員工旅遊補助辦法(999-99-3-08)V2, 段落標題:**5.**【作業程序**; Activities & Procedure**】:",
+                "此文件詳述相關單位執行員工旅遊補助作業之權責及執行步驟、流程圖及作業內容。",
+                "5.1職責(RoleandResponsibility)",
+                "5.1.1福委會每年第一季公告當年度員工旅遊補助辦法。",
+                "5.1.2旅遊活動主辦人應覓政府立案且優良旅行社協辦各項員工旅遊活動,或由主辦人自行規劃旅遊行程計畫與編列預算),並妥善安排參與人員所有旅程相關事項。",
+                "5.2流程架構(ProcessFlow)–略",
+                "5.3處理程序(ProcessDescription)",
+                "5.3.1員工旅遊補助資格–員工到職滿三個月且繳交職工福利金者,每人每年享有一次申請旅遊補助資格,且不得讓渡予他人使用。",
+                "5.3.2員工旅遊補助金額–符合補助資格者,每人每年以享有5,000元補助為原則,實際補助金額授權福委會視該年度預算作調整。",
+                "5.3.3旅遊補助金使用規定",
+                "(1)旅遊補助對象僅限參與旅遊之員工本人及其同行之人(限1人且不得讓渡予他人使用)。",
+                "(2)員工旅遊補助金的使用,只限於參加福委會舉辦之活動或符合5.3.6出團人數規定,並經福委會同意通過之活動。",
+                "(3)補助限制:補助費用以參加旅遊行程期間,所有旅遊活動中產生之費用(含食、住宿、交通、保險與遊樂區、藝文活動門票等)為限,其餘個人於旅程中衍生之其它費用(如土產、禮品、菸酒類等費用)不得申請補助。其中餐費費用,每人一餐以不超過2,500元為限,且每團活動至少需安排兩個活動以上。",
+                "(4)補助金額:須提供請款費用核銷有效單據申請,單據金額如有超過者,以年度補助金額預算為上限,金額不足年度補助金額預算者則實報實支。",
+                "(5)補助金款項須包含旅遊保險,投保金額需達觀光局最低規定保險金額。",
+                "(6)不符合規定或資料不齊全者,福委會得不予補助。",
+                "5.3.4訂金與旅款收取相關規定",
+                "(1)訂金應於各旅遊行程訂金收取時限內,繳交予福委會或旅遊活動主辦人。",
+                "(2)預收訂金以10%為原則,主辦旅行社另有較高規定者,依其規定辦理。",
+                "(3)主辦旅行社未預收訂金時,福委會或旅遊活動主辦人為方便運作,仍得預收訂金。",
+                "(4)已收取訂金卻無法參加者,旅遊餘款之返還則依協辦旅行社或旅遊活動主辦人之規定,分攤共同費用後按比例退還。",
+                "(5)各旅遊行程舉辦前,福委會或旅遊活動主辦人應向參與人員收取旅遊款差額,即旅遊總額扣除訂金之金額。旅遊補助金待旅遊行程結束後統一申請退回員工帳戶。",
+                "福委會員工旅遊補助辦法3/7神通資科機密文件",
+                "(6)因各旅遊行程所需前置作業時間不盡相同,旅遊款項、訂金的收取時間,依各行程公佈時間之規定收取。",
+                "(7)同仁於繳納全額旅遊款項後,於出發日前因故臨時無法參加旅遊者,旅遊活動主辦人得沒收所有已產生無法退還之支出,亦不得申請該次旅遊補助金,但不喪失當年度旅遊補助申請資格。",
+                "5.3.5請假規定–員工參與各項旅遊行程以不影響公務為原則,旅遊行程跨上班時間時,參加者應依規定自行於行程出發前完成請假、准假之程序。",
+                "5.3.6出團人數規定(出團人數以尚未請領過該年度旅遊補助之同仁計算)",
+                "(1)國內團:基本出團人數為員工五人,員工同行之人不包含在內。",
+                "(2)國外團:基本出團人數為員工五人,員工同行之人不包含在內。",
+                "5.3.7旅遊出團規定–員工旅遊承辦人應先提交旅遊計畫,並在福委會簽呈審核通過後於福委會公告欄安排員工旅遊公佈。",
+                "公告期間須在出團日前至少兩週以上,內容應包含:",
+                "(1)詳細旅遊行程表",
+                "(2)團費說明估價單",
+                "(3)訂金預收與旅遊款項退款方式",
+                "(4)報名方式與截止日期",
+                "(5)旅遊活動主辦人聯絡資訊",
+                "5.3.8簽呈審核文件–不論是由員工自辦或福委主辦,須於出團日公告發布前至少預留兩週以上作業時間,提交由員工旅遊承辦福委與福委會總幹事審核,並完成簽呈審核流程。核准文件由旅遊活動主辦人留存,於請款時須佐附為請款證明文件。",
+                "簽呈需另檢附文件:",
+                "(1)呈核會辦單(附件10.1)",
+                "(2)詳細旅遊行程表",
+                "(3)團費說明估價單",
+                "(4)旅行社旅遊契約書(旅行社協辦者需提供)",
+                "(5)旅行社立案登記證明文件(旅行社協辦者需提供)",
+                "5.3.9請款證明文件",
+                "5.3.9.1請款應檢附文件",
+                "(1)福委會給付申請單",
+                "(2)請款費用核銷有效單據",
+                "(3)具有地標性團體照一張(照片加註員工工號及姓名)",
+                "(4)已核准之旅遊簽呈",
+                "(5)員工旅遊名單(附件10.2)",
+                "(6)詳細旅遊行程表",
+                "(7)團費說明估價單",
+                "(8)福委會公告證明",
+                "(9)經福委會用印之旅行社旅遊契約書(旅行社協辦者需提供)",
+                "(10)旅行社立案登記證明文件(旅行社協辦者需提供)",
+                "5.3.9.2依旅遊地區及活動規劃方式區分應提供之請款證明單據如下,請款費用核銷有效的單據依5.3.9.3規定辦理:",
+                "備註:員工旅遊以團進團出為原則。如同仁自辦國內離島或國外自由行時,受補助團員所搭乘來回航(船)班須為同日期、同地點,住宿亦須為同飯店。"
+            ],
+            "image_text": "\n以文字詳述相關單位執行此項作業之權責及執行步驟、流程圖及作業內容。\n\n- 5.1 職責(Role and Responsibility )\n  - 5.1.1 福委會\n\n每年第一季公告當年度員工旅遊補助辦法。\n\n5.1.2 旅遊活動主辦人\n\n旅遊活動主辦人應覓政府立案且優良旅行社協辦各項員工旅遊活動,或 由主辦人自行規劃旅遊行程計畫與編列預算),並妥善安排參與人員所 有旅程相關事項。\n\n5.2 流程架構(Process Flow)\n\n略\n\n- 5.3 處理程序(Process Description)\n  - 5.3.1 員工旅遊補助資格\n\n員工到職滿三個月且繳交職工福利金者,每人每年享有一次申請旅遊補 助資格,且不得讓渡予他人使用。\n\n5.3.2 員工旅遊補助金額\n\n符合補助資格者,每人每年以享有 5,000 元補助為原則,實際補助金 額授權福委會視該年度預算作調整。\n\n5.3.3 旅遊補助金使用規定\n\n(1)旅遊補助對象僅限參與旅遊之員工本人及其同行之人(限 1 人且不得讓 渡予他人使用)。\n\n(2)員工旅遊補助金的使用,只限於參加福委會舉辦之活動或符合 5.3.6 出團人數規定,並經福委會同意通過之活動。\n\n(3)補助限制:補助費用以參加旅遊行程期間,所有旅遊活動中產生之費 用(含食、住宿、交通、保險與遊樂區、藝文活動門票等)為限,其餘 個人於旅程中衍生之其它費用(如土產、禮品、菸酒類等費用)不得申 請補助。其中餐費費用,每人一餐以不超過 2,500 元為限,且每團活動至 少需安排兩個活動以上。\n\n(4)補助金額:須提供請款費用核銷有效單據申請,單據金額如有超過者, 以年度補助金額預算為上限,金額不足年度補助金額預算者則實報實支。\n\n(5)補助金款項須包含旅遊保險,投保金額需達觀光局最低規定保險金額。\n\n(6)不符合規定或資料不齊全者,福委會得不予補助。\n\n5.3.4 訂金與旅款收取相關規定\n\n(1)訂金應於各旅遊行程訂金收取時限內,繳交予福委會或旅遊活動主辦 人。\n\n(2)預收訂金以 10%為原則,主辦旅行社另有較高規定者,依其規定辦理。 (3)主辦旅行社未預收訂金時,福委會或旅遊活動主辦人為方便運作,仍 得預收訂金。\n\n(4)已收取訂金卻無法參加者,旅遊餘款之返還則依協辦旅行社或旅遊活 動主辦人之規定,分攤共同費用後按比例退還。\n\n(5)各旅遊行程舉辦前,福委會或旅遊活動主辦人應向參與人員收取旅遊 款差額,即旅遊總額扣除訂金之金額。旅遊補助金待旅遊行程結束後統一 申請退回員工帳戶。\n\n福委會員工旅遊補助辦法 3 / 7 神通資科機密文件 (6)因各旅遊行程所需前置作業時間不盡相同,旅遊款項、訂金的收取時\n\n間,依各行程公佈時間之規定收取。\n\n(7)同仁於繳納全額旅遊款項後,於出發日前因故臨時無法參加旅遊者, 旅遊活動主辦人得沒收所有已產生無法退還之支出,亦不得申請該次旅遊 補助金,但不喪失當年度旅遊補助申請資格。\n\n5.3.5 請假規定\n\n員工參與各項旅遊行程以不影響公務為原則,旅遊行程跨上班時間時,\n\n參加者應依規定自行於行程出發前完成請假、准假之程序。\n\n5.3.6 出團人數規定(出團人數以尚未請領過該年度旅遊補助之同仁計算)\n\n(1)國內團:基本出團人數為員工五人,員工同行之人不包含在內。\n\n(2)國外團:基本出團人數為員工五人,員工同行之人不包含在內。\n\n5.3.7 旅遊出團規定\n\n員工旅遊承辦人應先提交旅遊計畫,並在福委會簽呈審核通過後於福委會 公告欄安排員工旅遊公佈。\n\n公告期間須在出團日前至少兩週以上,內容應包含 :\n\n- (1)詳細旅遊行程表\n- (2)團費說明估價單\n- (3)訂金預收與旅遊款項退款方式\n- (4)報名方式與截止日期\n- (5)旅遊活動主辦人聯絡資訊\n- 5.3.8 簽呈審核文件\n\n不論是由員工自辦或福委主辦,須於出團日公告發布前至少預留兩週以上 作業時間,提交由員工旅遊承辦福委與福委會總幹事審核,並完成簽呈審 核流程。核准文件由旅遊活動主辦人留存,於請款時須佐附為請款證明文 件。\n\n簽呈需另檢附文件:\n\n- (1)呈核會辦單(附件 10.1)\n- (2)詳細旅遊行程表\n- (3)團費說明估價單\n- (4)旅行社旅遊契約書(旅行社協辦者需提供)\n- (5)旅行社立案登記證明文件(旅行社協辦者需提供)\n- 5.3.9 請款證明文件\n\n5.3.9.1 請款應檢附文件\n\n(1)福委會給付申請單\n\n- (2)請款費用核銷有效單據\n- (3)具有地標性團體照一張(照片加註員工工號及姓名)\n- (4)已核准之旅遊簽呈\n- (5)員工旅遊名單(附件 10.2)\n- (6)詳細旅遊行程表\n- (7)團費說明估價單\n- (8)福委會公告證明\n- (9)經福委會用印之旅行社旅遊契約書(旅行社協辦者需提供)\n\n(10)旅行社立案登記證明文件(旅行社協辦者需提供)\n\n5.3.9.2 依旅遊地區及活動規劃方式區分應提供之請款證明單據如下,請款費用核銷有 效的單據依 5.3.9.3 規定辦理:\n\n\n備註:員工旅遊以團進團出為原則。如同仁自辦國內離島或國外自由行時,受補助團員\n\n<img src=\"data:image/png;base64,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\" alt=\"_page_5_Picture_0.jpeg\" style=\"max-width: 100%;\">\n\n所搭乘來回航(船)班須為同日期、同地點,住宿亦須為同飯店。\n\n",
+            "image": [
+                {
+                    "name": "_page_5_Picture_0.jpeg",
+                    "path": "storage/default/output_MD/福委會員工旅遊補助辦法(999-99-3-08)V2_v1/_page_5_Picture_0.jpeg"
+                }
+            ]
+        },
+        {
+            "ID": 9,
+            "type": "Text",
+            "title": "5.3.9.3 費用核銷有效單據說明:",
+            "raw_text": "\n(一)旅遊請款相關單據均需開立福委會統編資料:\n\n1.旅行社開立之代收轉付收據、統一發票及使用免用統一發票之店家收 據,須開立【神通資科聯合職工福利委員會】抬頭、統一編號【26331244】。 2.【免用統一發票】收據,須蓋有商家統一編號章。無統一編號章之店家 收據,不得申報。\n\n(二)交通費單據:包括大眾交通工具、加油等支出;計程車收據不列入補 助。\n\n(三)住宿費單據:由旅行社、住宿業者或訂房網站提供,內容包含住宿期 間與住房費用之住宿證明單據。\n\n1.國內住宿僅限透過旅行社或直接與住宿業者訂購,並取具開立統編之發 票或收據。\n\n2.國外住宿可透過旅行社、住宿業者、訂房網站訂購,並取具發票、收據 或繳費證明。\n\n(四)餐飲費用申報單據,須有申請統一編號之免用統一發票商店始可申報 補助。若旅遊係在百貨公司、大賣場、便利商店等購買食物,應與其他品 項發票分開,否則不得申請補助。\n\n5.3.10 旅遊保險規定\n\n(一)旅遊活動規劃項目,應須包含旅遊保險,旅遊保險金額需達觀光局最 低規定保險金額。\n\n(二)投保證明文件\n\n(1)由旅行社協辦團體須依公司名義為全體團員投保,開立團體 投保繳費證明,需含全體人員投保名單。\n\n(2)同仁自辦國內外自由行須提供個人投保繳費證明。\n\n5.4 本制度呈請總經理核示後實施,其修正時亦同。\n\n",
+            "propositions": [
+                "PDF name:福委會員工旅遊補助辦法(999-99-3-08)V2, Title:5.3.9.3 費用核銷有效單據說明:",
+                "檔案名稱:福委會員工旅遊補助辦法(999-99-3-08)V2, 段落標題:5.3.9.3 費用核銷有效單據說明:",
+                "5.3.9.3費用核銷有效單據說明：",
+                "(一)旅遊請款相關單據均需開立福委會統編資料。",
+                "1.旅行社開立之代收轉付收據、統一發票及使用免用統一發票之店家收據，須開立【神通資科聯合職工福利委員會】抬頭、統一編號【26331244】。",
+                "2.【免用統一發票】收據，須蓋有商家統一編號章。無統一編號章之店家收據，不得申報。",
+                "(二)交通費單據：包括大眾交通工具、加油等支出；計程車收據不列入補助。",
+                "(三)住宿費單據：由旅行社、住宿業者或訂房網站提供，內容包含住宿期間與住房費用之住宿證明單據。",
+                "1.國內住宿僅限透過旅行社或直接與住宿業者訂購，並取具開立統編之發票或收據。",
+                "2.國外住宿可透過旅行社、住宿業者、訂房網站訂購，並取具發票、收據或繳費證明。",
+                "(四)餐飲費用申報單據，須有申請統一編號之免用統一發票商店始可申報補助。若旅遊係在百貨公司、大賣場、便利商店等購買食物，應與其他品項發票分開，否則不得申請補助。",
+                "5.3.10旅遊保險規定",
+                "(一)旅遊活動規劃項目，應須包含旅遊保險，旅遊保險金額需達觀光局最低規定保險金額。",
+                "(二)投保證明文件",
+                "(1)由旅行社協辦團體須依公司名義為全體團員投保，開立團體投保繳費證明，需含全體人員投保名單。",
+                "(2)同仁自辦國內外自由行須提供個人投保繳費證明。",
+                "5.4本制度呈請總經理核示後實施，其修正時亦同。"
+            ],
+            "image_text": "",
+            "image": []
+        },
+        {
+            "ID": 10,
+            "type": "Text",
+            "title": "**6.**【控制重點**; Verification Points**】:",
+            "raw_text": "\n6.1 旅遊補助金的使用資格應符合相關規定。\n\n6.2 旅遊補助金請款核銷單據應符合相關規定。\n\n",
+            "propositions": [
+                "PDF name:福委會員工旅遊補助辦法(999-99-3-08)V2, Title:**6.**【控制重點**; Verification Points**】:",
+                "檔案名稱:福委會員工旅遊補助辦法(999-99-3-08)V2, 段落標題:**6.**【控制重點**; Verification Points**】:",
+                "旅遊補助金的使用資格應符合相關規定。",
+                "旅遊補助金請款核銷單據應符合相關規定。"
+            ],
+            "image_text": "",
+            "image": []
+        },
+        {
+            "ID": 11,
+            "type": "Text",
+            "title": "**7.**【允入**/**允出準則**; Entry/Exit Criteria**】:",
+            "raw_text": "\n7.1 允入準則:\n\n年度員工旅遊計劃提出時。\n\n7.2 允出準則:\n\n旅遊行程結束完成請款時。\n\n",
+            "propositions": [
+                "PDF name:福委會員工旅遊補助辦法(999-99-3-08)V2, Title:**7.**【允入**/**允出準則**; Entry/Exit Criteria**】:",
+                "檔案名稱:福委會員工旅遊補助辦法(999-99-3-08)V2, 段落標題:**7.**【允入**/**允出準則**; Entry/Exit Criteria**】:",
+                "年度員工旅遊計劃提出時。",
+                "旅遊行程結束完成請款時。"
+            ],
+            "image_text": "",
+            "image": []
+        },
+        {
+            "ID": 12,
+            "type": "Text",
+            "title": "**8.**【輸出**/**輸入**; Inputs/Outputs**】:",
+            "raw_text": "\n- 8.1 輸入:\n  - (1)福委會給付申請單\n  - (2)請款證明單據\n  - (3)投保證明文件與旅遊人員保險名單\n  - (4)具有地標性團體照一張\n  - (5)已送簽核可之旅遊簽呈\n  - (6)員工旅遊名單\n  - (7)詳細旅遊行程表\n  - (8)團費說明估價單\n  - (9)有福委會用印之旅行社旅遊契約書(旅行社協辦者需提供)\n  - (10)旅行社立案登記證明文件(旅行社協辦者需提供)\n- 8.2 輸出:\n\n員工旅遊補助款發放\n\n",
+            "propositions": [
+                "PDF name:福委會員工旅遊補助辦法(999-99-3-08)V2, Title:**8.**【輸出**/**輸入**; Inputs/Outputs**】:",
+                "檔案名稱:福委會員工旅遊補助辦法(999-99-3-08)V2, 段落標題:**8.**【輸出**/**輸入**; Inputs/Outputs**】:",
+                "8.1輸入：(1)福委會給付申請單，(2)請款證明單據，(3)投保證明文件與旅遊人員保險名單，(4)具有地標性團體照一張，(5)已送簽核可之旅遊簽呈，(6)員工旅遊名單，(7)詳細旅遊行程表，(8)團費說明估價單，(9)有福委會用印之旅行社旅遊契約書(旅行社協辦者需提供)，(10)旅行社立案登記證明文件(旅行社協辦者需提供)。",
+                "8.2輸出：員工旅遊補助款發放。"
+            ],
+            "image_text": "",
+            "image": []
+        },
+        {
+            "ID": 13,
+            "type": "Text",
+            "title": "**9.**【調適原則**; Tailoring Criteria**】:",
+            "raw_text": "\n無\n\n**10.**【附件**; Appendix**】:\n\n\n\n10.1 呈核會辦單\n\n\n\n10.2 員工旅遊名單\n\n10.3 給付申請單 參照「福委會福利措施」附件\n",
+            "propositions": [
+                "PDF name:福委會員工旅遊補助辦法(999-99-3-08)V2, Title:**9.**【調適原則**; Tailoring Criteria**】:",
+                "檔案名稱:福委會員工旅遊補助辦法(999-99-3-08)V2, 段落標題:**9.**【調適原則**; Tailoring Criteria**】:",
+                "無",
+                "核會辦單",
+                "員工旅遊名單",
+                "給付申請單(參照『福委會福利措施』附件)"
+            ],
+            "image_text": "\n無\n\n**10.**【附件**; Appendix**】:\n\n<img src=\"data:image/png;base64,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\" alt=\"_page_6_Picture_23.jpeg\" style=\"max-width: 100%;\">\n\n10.1 呈核會辦單\n\n<img src=\"data:image/png;base64,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\" alt=\"_page_6_Picture_25.jpeg\" style=\"max-width: 100%;\">\n\n10.2 員工旅遊名單\n\n10.3 給付申請單 參照「福委會福利措施」附件\n",
+            "image": [
+                {
+                    "name": "_page_6_Picture_23.jpeg",
+                    "path": "storage/default/output_MD/福委會員工旅遊補助辦法(999-99-3-08)V2_v1/_page_6_Picture_23.jpeg"
+                },
+                {
+                    "name": "_page_6_Picture_25.jpeg",
+                    "path": "storage/default/output_MD/福委會員工旅遊補助辦法(999-99-3-08)V2_v1/_page_6_Picture_25.jpeg"
+                }
+            ]
+        }
+    ]
+}
